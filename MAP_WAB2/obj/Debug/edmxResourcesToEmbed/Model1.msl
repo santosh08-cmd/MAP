@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="officeModelStoreContainer" CdmEntityContainer="officeEntities2">
+    <EntitySetMapping Name="SignUps">
+      <EntityTypeMapping TypeName="officeModel.SignUp">
+        <MappingFragment StoreEntitySet="SignUp">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Mobile" ColumnName="Mobile" />
+          <ScalarProperty Name="DOB" ColumnName="DOB" />
+          <ScalarProperty Name="Paasword" ColumnName="Paasword" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Logins">
+      <EntityTypeMapping TypeName="officeModel.Login">
+        <MappingFragment StoreEntitySet="Login">
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Farmers">
+      <EntityTypeMapping TypeName="officeModel.Farmer">
+        <MappingFragment StoreEntitySet="Farmer">
+          <ScalarProperty Name="Farmer_Details" ColumnName="Farmer_Details" />
+          <ScalarProperty Name="Farmer_Salary" ColumnName="Farmer_Salary" />
+          <ScalarProperty Name="Farmer_Mobile" ColumnName="Farmer_Mobile" />
+          <ScalarProperty Name="Famer_Address" ColumnName="Famer_Address" />
+          <ScalarProperty Name="Famer_Name" ColumnName="Famer_Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
